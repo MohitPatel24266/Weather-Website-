@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #222; */
+    font-family: "Playwrite US Modern", cursive;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    background-image: url("blue-sky-with-rainy-clouds_23-2148824933.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font: 120%;
+}
+.card {
+    background-color:#6dd5c3;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 400px;
+    margin: 1em;
+    opacity: 0.85;
+    font-weight:900;
+    justify-content: center;
+    color: #8B8000;
+    /* color:#FFD700; */
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    margin: 0.5em;
+    border: none;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    outline: none;
+    opacity: 0.67;
+    cursor: pointer;
+    transition: 0.2 ease-in-out;
+}
+button:hover{
+    opacity: 0.9;
+
+}
+input.searchbar{
+    border: none;
+    outline: none;
+    padding: 0.6em;
+    border-radius: 24px;
+    background-color: #ffe466 ;
+    color : #118ab2 ;
+    font-weight: bold;
+    font-family: inherit;
+    font-size:100%;
+    opacity: 0.85;
+    width: calc(100% - 50px);
+}
+
+h1.temp{
+    margin: 0px;
+}
