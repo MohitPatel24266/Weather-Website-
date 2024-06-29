@@ -4,7 +4,7 @@ if (typeof window !== "undefined") {
 
     const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
-    const searchBox = document.getElementById("#searchbar");
+    const searchBox = document.querySelector(".searchbar");
 
     const searchBtn = document.querySelector("#btn-city");
     // console.log(searchBtn.value);
