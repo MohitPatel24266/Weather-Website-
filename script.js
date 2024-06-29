@@ -6,7 +6,7 @@ if (typeof window !== "undefined") {
 
     const searchBox = document.querySelector(".searchbar");
 
-    const searchBtn = document.querySelector("#btn-city");
+    const searchBtn = document.querySelector(".search button");
     // console.log(searchBtn.value);
     async function checkWeather(city) {
         const response = await fetch(apiUrl + city + `&appid=${apikey}`);
