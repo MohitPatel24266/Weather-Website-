@@ -11,11 +11,12 @@ if (typeof window !== "undefined") {
     async function checkWeather(city) {
         const response = await fetch(apiUrl + city + `&appid=${apikey}`);
         var data = await response.json();
-        document.querySelector("#city") = data.name;
-        document.querySelector("#temp") = Math.round(data.main.temp) + "°C";
-        document.querySelector(".humidity") = data.main.humidity + "%";
-        document.querySelector(".wind") = data.wind.speed + "km/h";
-        document.querySelector(".description") = data.weather[0].description;
+         document.querySelector("#city").innerText = data.name;
+        document.querySelector("#temp").innerText = Math.round(data.main.temp) + "°C";
+        document.querySelector(".humidity").innerText ="humidity:"+ data.main.humidity + "%";
+        document.querySelector(".wind").innerText = "Wind speed :"+data.wind.speed + "km/h";
+        document.querySelector(".description").innerText = data.weather[0].description;
+        console.log(data.name,data.main.temp,data.main.humidity,data.wind.speed,data.weather);
     };
     // var res = searchBox.value;
     searchBtn.addEventListener("click", () => {
